@@ -1,0 +1,81 @@
+/* ВАЖНО - В данном файле все классы должны быть с припиской _custom */
+
+#content > div > div.content__div_center.hexagon_center > div.columns__hexagon.col_1 > button:nth-child(3) {
+    font-size: 16px;
+}
+
+#content > div > div.content__div_center.hexagon_center > div.columns__hexagon.col_0 > button:nth-child(3) {
+    font-size: 14px;
+}
+
+#content > div > div.content__div_center.hexagon_center > div.columns__hexagon.col_2 > button:nth-child(1) {
+    font-size: 14px;
+}
+
+#content > div.only_img > img {
+    width: 50%;
+}
+
+#content > div.text_with_img > div > img {
+    min-width: 100px;
+    width: 80%;
+}
+
+.unic_img_3_1 {
+    max-width: 500px;
+}
+
+.ul_custom {
+    margin-left: 50px;
+}
+
+.ol_custom {
+    margin-left: 50px;
+}
+
+.table_custom {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.table_custom td, th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table_custom_2 {
+    margin: 1rem;
+    background-color: #0070C0;
+    color: #FFFFFF;
+}
+
+.table_custom_2 img{
+    background-color: #0070C0;
+    color: #FFFFFF;
+}
+
+.table_custom_2 th {
+    border: 0px;
+}
+
+@media (max-width: 720px){
+    .two_img_custom{
+        flex-direction: column;
+    }
+
+    .table_custom img {
+        width: 100%;
+    }
+    
+    .two_img_custom > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #content > div.only_img > img {
+        width: 90%;
+    }
+}
