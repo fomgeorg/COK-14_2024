@@ -128,7 +128,7 @@ window.dataLoaded = false;
             "paragraph_1":[
                 {"subtitle2lvl": "MIC-2500 (1000) Измерители сопротивления, увлажненности и степени старения электроизоляции"},
                 {"text": "Измерители параметров электроизоляции MIC - 2500 (1000) предназначены:"},
-                {"text": `<table class='table_custom_2'>
+                {"text": `<table class='table_custom_2 table_custom_blue'>
                         <tr>
                             <th>Для измерения:</th>
                         </tr>
@@ -137,7 +137,7 @@ window.dataLoaded = false;
                     - напряжения постоянного и переменного тока до 600 В;<br>
                     - электрического сопротивления при постоянном токе.
                     `},
-                {"text": `<table class='table_custom_2'>
+                {"text": `<table class='table_custom_2 table_custom_blue'>
                         <tr>
                             <th>Для определения путем вычисления:</th>
                         </tr>
@@ -146,17 +146,17 @@ window.dataLoaded = false;
                     - увлажненности изоляции по коэффициенту абсорбции;<br>
                     - степени старения изоляции по коэффициенту поляризации.
                     `},
-                {"text": `<table class='table_custom_2'>
+                {"text": `<table class='table_custom_2 table_custom_blue'>
                         <tr>
                             <th>Для автоматического снятия электрического заряда с испытуемой изоляции по окончании процесса измерения</th>
                         </tr>
                         </table>
-                    <table class='table_custom_2'>
+                    <table class='table_custom_2 table_custom_blue'>
                         <tr>
                             <th>Для отображения результатов измерений в цифровом виде на дисплее</th>
                         </tr>
                         </table>
-                    <table class='table_custom_2'>
+                    <table class='table_custom_2 table_custom_blue'>
                         <tr>
                             <th>Для запоминания и передачи результатов измерений в компьютер</th>
                         </tr>
