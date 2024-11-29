@@ -42,7 +42,7 @@ footer {
     z-index: 1500;
 }
 p{
-    text-align: left !important;
+    text-align: left;
     text-indent: 0%;
     margin-bottom: 25px;
     font-size: clamp(18px, 1.5vw, 25px);
@@ -488,11 +488,15 @@ line{
     display: flex;
     flex-grow: 1;
     min-width: 200px;
-    width: 50%;
+    /* width: 50%; */
     min-height: 100% !important;
     margin-right: clamp(25px,1.25vw,50px);
     margin-left: 25px;
+    order: -1;
+    justify-content: center;
 }
+
+
 .image_test_type_2 img{
     width: 50%;
 }
@@ -533,7 +537,7 @@ line{
     text-indent: 0;
 }
 .description_w_input_2 span{
-    font-size: 20px;
+    font-size: 25px;
 }
 .description_w_input_2 label{
     font-size: 25px;
@@ -1207,7 +1211,7 @@ line{
 .targetField, .definition{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin-right: 15px;
     font-size: clamp(15px, 1.5vw, 25px);
     width: clamp(150px, 20vw, 450px);
@@ -1996,5 +2000,18 @@ line{
     }
     .image_wrapper{
         width: 400px;
+    }
+}
+
+
+.popup_window {
+    z-index: 18000 !important;
+}
+
+@media(max-width: 1180px){
+    .italic_sign_1 {
+        margin-top: -25px;
+        margin-bottom: 25px;
+        display: flex;
     }
 }

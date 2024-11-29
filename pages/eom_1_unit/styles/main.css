@@ -1110,3 +1110,11 @@ body, html {
         height: 150px;
     }
 }
+
+@supports (-webkit-touch-callout: none) {
+    /* Стили, специфичные для iOS */
+    .background_image{
+        content: '' !important;
+        background-color: #fff !important;
+    }
+}

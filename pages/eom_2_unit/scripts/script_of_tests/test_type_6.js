@@ -1,9 +1,19 @@
-if (blockButtonEOM2 === 1){
-    backWardBtn.classList.add('gray_dis');
-    backWardBtn.disabled = true;
-    nextBtn.classList.add('gray_dis');
-    nextBtn.disabled = true;
+function checkBtnStatus(){
+    var testData = data[`index_${currentPageIndex}`];
+    var attempts = parseInt(localStorage.getItem(`attempts_${currentPageIndex}`));
+    if(blockButtonEOM2 == 1 && attempts !== 0 && testData.hasOwnProperty('test')){
+        backWardBtn.classList.add('gray_dis');
+        backWardBtn.disabled = true;
+        nextBtn.classList.add('gray_dis');
+        nextBtn.disabled = true;
+    } else {
+        backWardBtn.classList.remove('gray_dis');
+        backWardBtn.disabled = false;
+        nextBtn.classList.remove('gray_dis');
+        nextBtn.disabled = false;
+    }
 }
+checkBtnStatus();
 answerButton.classList.remove('gray_dis');
 answerButton.disabled = false;
 var element = document.querySelector('.number_of_step');
@@ -176,6 +186,8 @@ function checkParagraph(){
         document.getElementById('control_button_3').style.display = 'none';
         nextBtn.classList.remove('gray_dis');
         nextBtn.disabled = false;
+        backWardBtn.classList.remove('gray_dis');
+        backWardBtn.disabled = false;
         window.alert("Вы потратили все попытки для прохождения задания, кнопка 'Ответить' заблокирована!!!");
     }
     // ЭТО ДЛЯ ОШИБОК

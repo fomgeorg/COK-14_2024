@@ -24,11 +24,17 @@
     }
 }
 
+.definition p{
+    text-align: left;
+    margin: 0;
+}
+
 .ul_custom {
     margin-left: 50px;
 }
 
 .two_img_custom img {
-    width: 80%;
+    margin: 10px;
+    width: 90%;
 }
 
