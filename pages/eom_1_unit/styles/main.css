@@ -1113,8 +1113,15 @@ body, html {
 
 @supports (-webkit-touch-callout: none) {
     /* Стили, специфичные для iOS */
-    .background_image{
+    .background_color{
         content: '' !important;
         background-color: #fff !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -5;
+        overflow: hidden;
     }
 }
