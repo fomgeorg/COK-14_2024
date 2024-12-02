@@ -482,7 +482,7 @@ line{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center !important;
 }
 .image_test_type_2{
     display: flex;
@@ -1025,7 +1025,7 @@ ul li div{
 .test_with_text_3 {
     max-width: 100%;
     order: 2;
-    font-size: clamp(18px, 1.5vw, 22px);
+    font-size: clamp(20px, 1.5vw, 22px);
     margin-left: 25px;
     display: flex;
     flex-wrap: wrap;

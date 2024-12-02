@@ -273,6 +273,8 @@ function createTest(index){
                     partiallyCorrect = true;
                     // Если ответ неправильный, добавляем класс incorrect
                     element.classList.add('incorrect');
+                    nextBtn.classList.remove('gray_dis');
+                    nextBtn.disabled = false;
                 }
                 if (!allCorrect && partiallyCorrect){
                     shouldDecreaseAttempts = true; // Устанавливаем флаг для уменьшения попыток
@@ -282,6 +284,7 @@ function createTest(index){
             }
         }
         if (shouldDecreaseAttempts){
+            var attempts = localStorage.getItem(`attempts_${number}`);
             attempts--;
             localStorage.setItem(`attempts_${number}`, attempts.toString());
         };

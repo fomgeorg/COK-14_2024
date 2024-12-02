@@ -159,6 +159,7 @@ p {
     margin-right: 25px;
     transition: all 0.3s;
 }
+
 .black_title button:hover {
     background-color: white;
     color: black;
