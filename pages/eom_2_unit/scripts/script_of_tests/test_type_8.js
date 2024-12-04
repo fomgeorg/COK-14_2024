@@ -294,6 +294,10 @@ if (!planeText) {
                     if (result[i] === correctAnswers[i]) {
                         // Если ответ правильный, добавляем класс correct
                         element.classList.add('correct');
+                        backWardBtn.classList.remove('gray_dis');
+                        backWardBtn.disabled = false;
+                        nextBtn.classList.remove('gray_dis');
+                        nextBtn.disabled = false;
                     } else {
                         allCorrect = false;
                         partiallyCorrect = true;
